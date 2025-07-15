@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .box-containere {
+            display: flex;
+            gap: 10px;
+            width: 95vw;
+            height: 95vh;
+            border: 5px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .left-box {
+            background-color: rgb(168, 160, 160);
+            border: 1px solid tomato;
+            width: 33%;
+            text-align: center;
+            align-content: center;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+
+        }
+
+        .right-box {
+            background-color: rgb(241, 241, 214);
+            border: 1px solid tomato;
+            width: 67%;
+            text-align: center;
+            align-content: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-containere">
+        <div class="left-box">
+            <h2>Left</h2>
+        </div>
+        <div class="right-box">
+            <h2>Right</h2>
+        </div>
+    </div>
+</body>
+
+</html>
