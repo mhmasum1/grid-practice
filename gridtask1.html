@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <style>
-        .box-containere {
+        .box-container {
             display: flex;
             gap: 10px;
             width: 95vw;
@@ -14,8 +14,8 @@
             border: 5px solid black;
             padding: 20px;
             box-sizing: border-box;
-            margin: 0 auto;
             border-radius: 20px;
+            margin: 10px;
         }
 
         .left-box {
@@ -38,11 +38,27 @@
             align-content: center;
             border-radius: 20px;
         }
+
+        @media screen and (max-width:768px) {
+            .box-container {
+                flex-direction: column;
+            }
+
+            .left-box {
+                width: 90vw;
+                height: 33%;
+            }
+
+            .right-box {
+                width: 90vw;
+                height: 67%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="box-containere">
+    <div class="box-container">
         <div class="left-box">
             <h2>Left</h2>
         </div>
